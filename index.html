@@ -1,28 +1,271 @@
-<!DOCTYPE  html><html><head><title>WECHAT_EMPTY_TITLE</title><style id="__WXWORK_INNER_SCROLLBAR_CSS">::-webkit-scrollbar { width: 12px !important; height: 12px !important; }::-webkit-scrollbar-track:vertical {  }::-webkit-scrollbar-thumb:vertical { background-color: rgba(136, 141, 152, 0.5) !important; border-radius: 10px !important; background-clip: content-box !important; border:2px solid transparent !important; } ::-webkit-scrollbar-track:horizontal {  }::-webkit-scrollbar-thumb:horizontal { background-color: rgba(136, 141, 152, 0.5) !important; border-radius: 10px !important; background-clip: content-box !important; border:2px solid transparent !important; } ::-webkit-resizer { display: none !important; }</style></head><body align="center" background="w.jpg">
-<h1>Hello&nbsp;World</h1>
-<p>I'm&nbsp;hosted&nbsp;with&nbsp;GitHub&nbsp;Pages.</p>
-<p>
-<a href="https://gengqijiash.github.io/homework1">
-&nbsp;&nbsp;&nbsp;&nbsp;homework1.
-</a>
-<br>
-<a href="https://gengqijiash.github.io/homework2">
-&nbsp;&nbsp;&nbsp;&nbsp;homework2.
-</a>
-<br>
-<a href="https://gengqijiash.github.io/homework3">
-    &nbsp;&nbsp;&nbsp;&nbsp;homework3.
-</a>
-<br>
-<a href="https://gengqijiash.github.io/homework4">
-    &nbsp;&nbsp;&nbsp;&nbsp;homework4.
-</a>
-<br>
-<a href="https://gengqijiash.github.io/homework5">
-    &nbsp;&nbsp;&nbsp;&nbsp;homework5.
-</a>
+<!DOCTYPE html><html><head>
+<meta name="gengqijiash.io" content="width=device-width, initial-scale=1.0">
+<title>WECHAT_EMPTY_TITLE</title>
     
-</p>
+<style>
+* {
+  box-sizing: border-box;
+}
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 42%; min-width: 200px;max-width: 200px;}
+.col-6 {width: 50%;}
+.col-7 {width: 58%;}
+.col-8 {width: 66.66%;}
+.col-9 {position:fixed; width: 100%; margin-left: 200px; overflow:hidden;display: flex;}
+.col-10 {position:fixed; width: 100%; margin-left: 10%; overflow:hidden;display: flex;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+body {
+  background-image: url("i.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+}
+#head img{
+  float: right;
+  width: 85px;
+    padding:0.7%;;
+}
+
+    #head img:hover{
+        opacity: 0.5;
+    }
+
+
+header {
+  background-color: #6495ED;
+  background-image: url("11.jpg");
+  background-size:20%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  text-align: center;
+  font-size: 120%;
+  color: white;
+  overflow: visible;
+  min-width:800px;
+}
+    
+section {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 20px;
+}
+    
+#HeaderUl {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 600px;  
+}
+    
+#HeaderUl li{
+    float: left;
+    
+    }
+    
+#HeaderUl li a{
+        display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  transition: background-color 1s;
+    }
+    
+#HeaderUl li a:hover{
+        background-color: #111111;
+    transition: background-color 1s;
+    }
+
+    
+    
+.listcontent{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-width: 250px;
+  min-width: 160px;
+
+ 
+}
+.listcontent img{
+        
+        float: left;
+        width: 33px;
+        padding-right:10px;;
+    }
+    
+.listcontent li  {
+        padding-bottom: 10px; 
+    }
+    
+.listcontent li a {
+  border-radius: 25px;
+  display: block;
+  color: #888;
+  padding: 8px 16px;
+  text-decoration: none;
+  background: rgb(240,240,240,0.5);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.24);
+  transition: background-color 1s;
+}
+.listcontent li a.active {
+  background-color: rgb(10,100,75,0.4);
+  color: white;
+}
+
+.listcontent li a:hover:not(.active) {
+    
+  background-color: rgb(100,100,100,0.3);
+  transition: background-color 1s;
+}
+    
+.logo div.gallery {
+  height: 500px;
+  border-radius: 0px 0px 25px 25px;
+  background-color: rgb(250, 250, 250,0.5);
+    
+}
+
+.logo div.gallery:hover {
+  background-image: linear-gradient(rgb(50, 0, 0,0), rgb(255, 0, 0,1));
+  color:white;
+  transform: background-image 1s;
+}
+
+.logo div.gallery img {
+
+  width: 100%;
+    min-width: 110px;
+  height: auto;
+}
+
+.logo div.desc {
+  padding: 15px 15px;
+  text-align: center;
+}
+
+
+.responsive {
+  margin-left: 3%;
+  padding: 0px 5px;
+  float:left;
+  width: 120px;
+    
+  
+}
+
+
+
+    
+</style>
+
+<style id="__WXWORK_INNER_SCROLLBAR_CSS">::-webkit-scrollbar { width: 12px !important; height: 12px !important; }::-webkit-scrollbar-track:vertical {  }::-webkit-scrollbar-thumb:vertical { background-color: rgba(136, 141, 152, 0.5) !important; border-radius: 10px !important; background-clip: content-box !important; border:2px solid transparent !important; } ::-webkit-scrollbar-track:horizontal {  }::-webkit-scrollbar-thumb:horizontal { background-color: rgba(136, 141, 152, 0.5) !important; border-radius: 10px !important; background-clip: content-box !important; border:2px solid transparent !important; } ::-webkit-resizer { display: none !important; }</style></head>
+    
+<body>
+<header id="head">
+    <nav>
+        <img src="logo.jpg" alt="Bloodywing">
+        <ul id="HeaderUl">
+              <li><a href="Introduce.html">Introduce</a></li>
+        </ul>
+    </nav>
+</header>
+    
+<section style=" width: 100%;overflow:hidden">
+
+<div class="col-5">
+  <nav>
+    <ul class="listcontent">
+      <li><a class="active" href="index.html">
+          <img src="sign_self.png" alt="Self">
+          Bloodyiwng
+          </a>
+        </li>
+  <li><a href="news.html">
+      <img src="sign_new.png" alt="News">
+      News
+      </a>
+        </li>
+  <li><a href="hobby.html">
+      <img src="sign_love.png" alt="Hobby">
+      Hobby
+      </a>
+        </li>
+  
+    </ul>
+  </nav>
+    </div>
+    
+  <div class="col-9">
+      <div class="col-10">
+    <div class="logo responsive">
+  <div class="gallery">
+    <a target="_blank" href="logo_1.png">
+      <img src="logo_1.png" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">First</div>
+  </div>
+</div>
+
+
+<div class=" logo responsive">
+  <div class="gallery">
+    <a target="_blank" href="logo_2.png">
+      <img src="logo_2.png" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Second</div>
+  </div>
+</div>
+
+<div class=" logo responsive">
+  <div class="gallery">
+    <a target="_blank" href="logo_3.png">
+      <img src="logo_3.png" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Third</div>
+  </div>
+</div>
+
+<div class="logo responsive">
+  <div class="gallery">
+    <a target="_blank" href="logo_4.png">
+      <img src="logo_4.png" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Forth</div>
+  </div>
+</div>
+
+<div class="logo responsive">
+  <div class="gallery">
+    <a target="_blank" href="logo_5.png">
+      <img src="logo_5.png" alt="logo_5" width="600" height="400">
+    </a>
+    <div class="desc">Fifth</div>
+  </div>
+</div>
+    </div>
+</div>
+</section>
 
 </body></html>
