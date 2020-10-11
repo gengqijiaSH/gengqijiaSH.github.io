@@ -1,276 +1,98 @@
-<!DOCTYPE html><html><head>
-<meta name="gengqijiash.io" content="width=device-width, initial-scale=1.0">
-<title>WECHAT_EMPTY_TITLE</title>
-    
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
-* {
-  box-sizing: border-box;
+body,h1,h2{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+p {line-height: 2}
+.bgimg, .bgimg2 {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
 }
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 42%; min-width: 200px;max-width: 200px;}
-.col-6 {width: 50%;}
-.col-7 {width: 58%;}
-.col-8 {width: 66.66%;}
-.col-9 {position:fixed; width: 100%; margin-left: 200px; overflow:hidden;display: flex;}
-.col-10 {position:fixed; width: 100%; margin-left: 10%; overflow:hidden;display: flex;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-
-
-body {
-  background-color: #FAFAD2;
-  background-repeat: no-repeat;
-  background-position: top center;
-
-}
-#head img{
-  float: left;
-  width: 85px;
-    padding:0.7%;;
-}
-
-    #head img:hover{
-        opacity: 0.5;
-    }
-
-
-header {
-  background-color: #FFA500;
-  background-image: url("logo.jpg");
-  background-size:12%;
-  background-repeat: no-repeat;
-  background-position: right center;
-  text-align: center;
-  font-size: 180%;
-  color: white;
-  overflow: visible;
-  min-width:800px;
-}
-    
-section {
-  content: "";
-  display: table;
-  clear: both;
-  padding: 20px;
-}
-    
-#HeaderUl {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  width: 600px;  
-}
-    
-#HeaderUl li{
-    float: left;
-    
-    }
-    
-#HeaderUl li a{
-        display: block;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-  transition: background-color 1s;
-    }
-    
-#HeaderUl li a:hover{
-        background-color: #111111;
-    transition: background-color 1s;
-    }
-
-    
-    
-.listcontent{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  max-width: 250px;
-  min-width: 160px;
-
- 
-}
-.listcontent img{
-        
-        float: left;
-        width: 33px;
-        padding-right:10px;;
-    }
-    
-.listcontent li  {
-        padding-bottom: 10px; 
-    }
-    
-.listcontent li a {
-  border-radius: 25px;
-  display: block;
-  color: #888;
-  padding: 8px 16px;
-  text-decoration: none;
-  background: rgb(240,240,240,0.5);
-  box-shadow: 0 1px 2px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.24);
-  transition: background-color 1s;
-}
-.listcontent li a.active {
-  background-color: rgb(10,100,75,0.4);
-  color: white;
-}
-
-.listcontent li a:hover:not(.active) {
-    
-  background-color: rgb(100,100,100,0.3);
-  transition: background-color 1s;
-}
-    
-.logo div.gallery {
-  height: 500px;
-  border-radius: 0px 0px 25px 25px;
-  background-color: rgb(250, 250, 250,0.5);
-    
-}
-
-.logo div.gallery:hover {
-  background-image: linear-gradient(rgb(50, 0, 0,0), rgb(240, 147, 169,1));
-  color:white;
-  transform: background-image 1s;
-}
-
-.logo div.gallery img {
-
-  width: 100%;
-    min-width: 110px;
-  height: auto;
-}
-
-.logo div.desc {
-  padding: 15px 15px;
-  text-align: center;
-}
-
-
-.responsive {
-  margin-left: 3%;
-  padding: 0px 5px;
-  float:left;
-  width: 120px;
-    
-  
-}
-
-
-
-    
+.bgimg {background-image: url("01.jpeg")}
+.bgimg2 {background-image: url("02")}
 </style>
-
-<style id="__WXWORK_INNER_SCROLLBAR_CSS">::-webkit-scrollbar { width: 12px !important; height: 12px !important; }::-webkit-scrollbar-track:vertical {  }::-webkit-scrollbar-thumb:vertical { background-color: rgba(136, 141, 152, 0.5) !important; border-radius: 10px !important; background-clip: content-box !important; border:2px solid transparent !important; } ::-webkit-scrollbar-track:horizontal {  }::-webkit-scrollbar-thumb:horizontal { background-color: rgba(136, 141, 152, 0.5) !important; border-radius: 10px !important; background-clip: content-box !important; border:2px solid transparent !important; } ::-webkit-resizer { display: none !important; }</style></head>
-    
 <body>
-<header id="head">
-    <nav>
-        <img src="logo.jpg" alt="gengqijiash">
-        <ul id="HeaderUl">
-              <li><a href="https://gengqijiash.github.io/">MY BLOG.</a></li>
-        </ul>
-    </nav>
+
+<!-- Header / Home-->
+<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo">GQJ's Blog</h1>
+    <h2>HELLO</h2>
+    <h2><b>10.2020</b></h2>
+  </div>
 </header>
-    
-<section style=" width: 100%;overflow:hidden">
 
-<div class="col-5">
-  <nav>
-    <ul class="listcontent">
-      <li><a class="active" href="index.html">
-          <img src="sign_self.png" alt="Self">
-          gengqijia
-          </a>
-        </li>
-  <li><a href="news.html">
-      <img src="sign_new.png" alt="News">
-      News
-      </a>
-        </li>
-  <li><a href="hobby.html">
-      <img src="sign_love.png" alt="Hobby">
-      Hobby
-      </a>
-        </li>
-  
-    </ul>
-  </nav>
+<!-- Navbar (sticky bottom) -->
+<div class="w3-bottom w3-hide-small">
+  <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+    <a href="#home" style="width:25%" class="w3-bar-item w3-button">homework1</a><a href="http://gengqijiash.github.io/homework1">
+    <a href="#us" style="width:25%" class="w3-bar-item w3-button">homework2</a><a href="http://gengqijiash.github.io/homework2">
+    <a href="#wedding" style="width:25%" class="w3-bar-item w3-button">homework3</a><a href="http://gengqijiash.github.io/homework3">
+    <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">homework4</a>
+  </div>
+</div>
+      
+<!-- About / Jane And John -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us">
+  <div class="w3-content">
+    <h1 class="w3-center w3-text-grey"><b>HI~</b></h1>
+    <img class="w3-round w3-grayscale-min" src="03.jpeg" style="width:100%;margin:32px 0">
+    <p><i>When love beckons to you, follow him, though his ways are hard and steep. And when his wings enfold you, yield to him, though the sword hidden among his pinions may wound you.　
+        
+        And when he speaks to you, believe in him, though his voice may shatter your dreams as the north wind lays waste the garden.　　
+        For even as love crowns you so shall he crucify you. Even as he is for your growth so is he for your pruning.</i>
+    </p><br>
+    <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">Details</a></p>
+  </div>
+</div>
+
+<!-- Background photo -->
+<div class="w3-display-container bgimg2">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo">Be happy!</h1><br>
+    <h2>Of course..</h2>
+  </div>
+</div>
+
+<!-- Wedding information -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="wedding">
+  <div class="w3-content">
+    <h1 class="w3-text-grey"><b>Beginning</b></h1>
+    <img class="w3-round-large w3-grayscale-min" src="04.jpeg" style="width:100%;margin:64px 0">
+    <div class="w3-row">
+      <div class="w3-half">
+        <h2>Active happiness</h2>
+        <p>Everything assumes a fairer proportion.</p>
+      </div>
+      <div class="w3-half">
+        <h2>The goodness of life</h2>
+        <p>There is goodness to life that cannot be denied.</p>
+        
+      </div>
     </div>
-    
-  <div class="col-9">
-      <div class="col-10">
-    <div class="logo responsive">
-  <div class="gallery">
-    <a target="_blank" href="1.jpg">
-      </a><a href="https://gengqijiash.github.io/homework1">
-<img src="1.jpg" alt="Cinque Terre" width="600" height="400">
-    </a>
-    <div class="desc">Homework1</div>
   </div>
 </div>
 
-
-<div class=" logo responsive">
-  <div class="gallery">
-    <a target="_blank" href="2.jpg">
-      </a><a href="https://gengqijiash.github.io/homework2">
-        <img src="2.jpg" alt="Forest" width="600" height="400">
-    </a>
-    <div class="desc">Homework2</div>
-  </div>
+<!-- RSVP section -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="rsvp">
+  <h1>HOPE YOU CAN LOOK IT!</h1>
+  <p class="w3-xlarge">
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">HOME</button>
+  </p>
 </div>
 
-<div class=" logo responsive">
-  <div class="gallery">
-    <a target="_blank" href="3.jpg">
-      </a><a href="https://gengqijiash.github.io/homework3">
-<img src="3.jpg" alt="Northern Lights" width="600" height="400">
-    </a>
-    <div class="desc">Homework3</div>
-  </div>
-</div>
 
-<div class="logo responsive">
-  <div class="gallery">
-    <a target="_blank" href="4.jpg">
-      </a><a href="https://gengqijiash.github.io/homework4">
-    <img src="4.jpg" alt="Mountains" width="600" height="400">
-    </a>
-    <div class="desc">Homework4</div>
-  </div>
-</div>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="http://gengqijiash.github.io" title="Gengqijia" target="_blank" class="w3-hover-text-green">겅치지아</a></p>
+</footer>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
 
-<div class="logo responsive">
-  <div class="gallery">
-    <a target="_blank" href="5.jpg">
-      </a><a href="https://gengqijiash.github.io/homework5">
-    <img src="5.jpg" alt="logo_5" width="600" height="400">
-    </a>
-    <div class="desc">Homework5</div>
-  </div>
-</div>
-    </div>
-</div>
-</section>
-
-</body></html>
+</body>
+</html>
